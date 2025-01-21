@@ -1,0 +1,73 @@
+/* CollegeEnrollmentForm.css */
+
+body{
+  background-image: url();
+  background-color: #fff5ee; 
+}
+h2, h3, h1 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50; /* Dark blue-gray */
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #bdc3c7; /* Light gray */
+  border-radius: 10px;
+  background-color: #ecf0f1; /* Soft light gray */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-family: 'Verdana', sans-serif;
+  color: #34495e; /* Deep gray-blue */
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bdc3c7; /* Light gray border */
+  border-radius: 6px;
+  background-color: #ffffff; /* White */
+  font-family: 'Tahoma', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #2980b9; /* Bright blue */
+  outline: none;
+  background-color: #eaf2f8; /* Light blue tint */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db; /* Bright blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9; /* Deeper blue */
+  transform: scale(1.02); /* Slight zoom effect */
+}
+
+textarea {
+  resize: vertical; /* Allow resizing only vertically */
+}
+
