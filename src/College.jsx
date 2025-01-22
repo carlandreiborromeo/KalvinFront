@@ -23,7 +23,7 @@ const CollegeEnrollmentForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://kalven-bgh9h4btgaggbsdd.southeastasia-01.azurewebsites.net/posts', {
+      const response = await fetch('https://kalven-bgh9h4btgaggbsdd.southeastasia-01.azurewebsites.net/enrollment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
