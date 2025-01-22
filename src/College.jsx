@@ -28,7 +28,7 @@ const CollegeEnrollmentForm = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-  
+
       const result = await response.json();
       console.log(result.msg);
       setSubmitted(true);
@@ -36,7 +36,6 @@ const CollegeEnrollmentForm = () => {
       alert('An error occurred while submitting the form. Please try again later.');
     }
   };
-  
 
   return (
     <div>
@@ -63,8 +62,8 @@ const CollegeEnrollmentForm = () => {
             <label>Date of Birth:</label>
             <input
               type="date"
-              name="dateOfBirth"
-              value={formData.dateOfBirth}
+              name="date_of_birth"
+              value={formData.date_of_birth}
               onChange={handleChange}
               required
             />
@@ -99,9 +98,9 @@ const CollegeEnrollmentForm = () => {
           <div>
             <label>Phone Number:</label>
             <input
-              type="number"
-              name="phoneNumber"
-              value={formData.phoneNumber}
+              type="tel"
+              name="phone_number"
+              value={formData.phone_number}
               onChange={handleChange}
               required
             />
@@ -116,3 +115,4 @@ const CollegeEnrollmentForm = () => {
 };
 
 export default CollegeEnrollmentForm;
+
